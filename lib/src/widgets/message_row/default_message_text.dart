@@ -35,7 +35,7 @@ class DefaultMessageText extends StatelessWidget {
                   child: Text(
                     (messageOptions.timeFormat ?? intl.DateFormat('HH:mm'))
                         .format(message.createdAt),
-                    style: TextStyle(
+                    style: SelectableText(
                       color: isOwnMessage
                           ? messageOptions.currentUserTimeTextColor(context)
                           : messageOptions.timeTextColor(),
